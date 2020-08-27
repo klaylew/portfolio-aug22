@@ -1,0 +1,63 @@
+  body {
+  background-color: #e2e2e2;
+  }
+
+  header h1{ /* header text */
+    font-size: 40px;
+    color:  white;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0 0 0;
+  }
+
+  header h5{ /* page sub-header */
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 0 0 15px 0;
+  }
+
+  header{ /* background color for header container */
+    background-color: gray;
+  }
+
+  h2{ /* header2 style */
+    margin: 40px;
+    text-align: center;
+    color: rgb(83, 83, 83);
+  }
+  
+  .wrapper {  /* wrapper class for centering contents with margins */
+    width: 650px;
+    margin: auto;
+  }
+
+
+  img{ /* rounded corners on images */
+    border-radius: 5px;
+  }
+
+  .text-center{ /* centered text class for image centering */
+    text-align:center;
+  }
+
+  hr{ /* horizontal rule constraints */
+    margin: 40px;
+  }
+
+
+/* Text link rollover pseudo-class */
+  a:link    { color: blue;  }
+  a:visited { color: red;   }
+  a:hover   { color: green; }
+  a:active  { color: pink;  }
+
+  footer{  /* footer background color */
+    background-color: gray;
+  }
+
+  footer p{
+    padding: 20px 0 20px 0;
+    color: white;
+    text-align: center;
+  }
