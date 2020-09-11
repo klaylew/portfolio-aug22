@@ -1,73 +1,162 @@
-  body {
-  background-color: #e2e2e2;
-  }
+/* General */  
 
-  header h1{ /* header text */
-    border-bottom: 2px solid white;
-    font-family: 'Ceviche One', cursive;
-    font-size: 125px;
-    font-weight: 100;
-    letter-spacing: 3px;
-    color:  white;
-    text-align: center;
-    margin: 0;
-    padding: 20px 0 5px 0;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Rajdhani&display=swap');
 
-  header h3{ /* page sub-header */
-    font-family: sans-serif;
-    font-size: 25px;
-    color: white;
-    text-align: center;
-    padding: 0 0 15px 0;
-  }
+body {
+background-color: #e2e2e2;
+}
 
-  header{ /* background color for header container */
-    background-color: gray;
-  }
+h2{
+  margin: 10px;
+  font-family: 'Rajdhani', sans-serif;
+  color: rgb(83, 83, 83);
+}
 
-  h2{ /* header2 style */
-    margin: 40px;
-    text-align: center;
-    color: rgb(83, 83, 83);
-  }
-  
-  .wrapper {  /* wrapper class for centering contents with margins */
-    width: 650px;
-    margin: auto;
-  }
+h3{
+  font-family: 'Rajdhani', sans-serif;
+  color: rgb(83, 83, 83);
+}
+
+p, ul, ol{
+  margin: 10px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.large {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.wrapper {  /* wrapper class for centering contents with margins */
+  width: 100%;
+  margin: auto;
+}
 
 
-  img{ /* rounded corners on images */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    border-radius: 5px;
-  }
+img{ /* rounded corners on images */
+  display: block;
+  border-radius: 5px;
 
-  .text-center{ /* centered text class for image centering */
-    text-align:center;
-  }
+}
 
-  hr{ /* horizontal rule constraints */
-    margin: 40px;
-  }
+.text-center{ /* centered text class for image centering */
+  text-align:center;
+}
+
+hr{ /* horizontal rule constraints */
+  margin: 40px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.full-width{
+    width: 100%;
+}
+
+/* header */
+
+
+header h1{ 
+  font-family: 'Give You Glory', cursive;
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: 10px;
+  text-shadow: 8px 8px 5px rgb(0, 0, 0);
+  color:   rgb(187, 170, 155);
+  text-align: center;
+  margin: 0;
+}
+
+header h3{ /* page sub-header */
+  font-family: 'Rajdhani', sans-serif;
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 200;
+  color:   rgb(187, 170, 155);
+  text-align: center;
+}
+
+header{ /* background color for header container */
+  background-color: rgb(68, 25, 0);
+  padding: 35px 0;
+  margin: 0 0 20px 0;
+}
+
+
+
+
 
 
 /* Text link rollover pseudo-class */
-  a:link    { color: blue;  }
-  a:visited { color: red;   }
-  a:hover   { color: green; }
-  a:active  { color: pink;  }
+a:link    { color: blue;  }
+a:visited { color: red;   }
+a:hover   { color: green; }
+a:active  { color: pink;  }
 
-  footer{  /* footer background color */
-    height: 75px;
-    background-color: gray;
+footer{  /* footer background color */
+  height: 75px;
+  background-color: gray;
+}
+
+footer p{
+  padding: 20px 0 20px 0;
+  color: white;
+  text-align: center;
+}
+
+
+/* Groups and Items -- Mobile First*/
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  align-items: center;
+  height: 100%;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  align-items: center;
+  margin: 10px;
+}
+
+
+
+/* Groups and Items -- desktop over 800px wide*/
+
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
   }
 
-  footer p{
-    padding: 20px 0 20px 0;
-    color: white;
-    text-align: center;
+  .group {
+    flex-direction: row;
   }
+
+}
+
+
+form input,
+form textarea {
+  width: 100% ;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
+
+iframe {
+  margin: 35px;
+}
