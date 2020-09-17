@@ -93,10 +93,21 @@ header{ /* background color for header container */
 
 
 /* Text link rollover pseudo-class */
-a:link    { color: blue;  }
-a:visited { color: red;   }
-a:hover   { color: green; }
-a:active  { color: pink;  }
+a:link    { color: blue; font-weight: normal;
+text-decoration: underline; }
+a:visited { color: red; font-weight: normal;
+text-decoration: underline;  }
+a:hover   { color: green; font-weight: normal;
+text-decoration: underline;}
+a:active  { color: pink;  font-weight: normal;
+text-decoration: underline;}
+
+/* styling for placeholder links*/
+a {
+color: red;
+font-weight: bold;
+text-decoration: none;
+}
 
 footer{  /* footer background color */
   height: 75px;
@@ -159,4 +170,19 @@ form textarea {
 
 iframe {
   width: 100%;
+}
+
+/* -------  Spacers ------- */  
+
+.gap-sm {
+    height: 20px;
+    width: auto;
+}
+.gap-md {
+    height: 100px;
+    width: auto;
+}
+.gap-lg {
+    height: 200px;
+    width: auto;
 }
